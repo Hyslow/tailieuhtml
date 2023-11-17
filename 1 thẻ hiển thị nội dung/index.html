@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Khai báo đang sử dụng html quy chuẩn -->
+
+<html lang="vi">
+    <!-- -Dùng để định nghĩa phần thân của tài liệu html 
+         - lang = Mã ngôn ngữ 
+         - Trong 1 file html chỉ có 1 cặp thẻ html duy nhất  -->
+         <head>
+    <!-- Chứa các thông tin về trang web mà không được hiển thị trực tiếp trên trình duyệt  -->
+    <meta charset="UTF-8">
+<!-- Khai báo mã ngôn ngữ utf 8 việt nam  --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tiêu Đề tran Web -->
+    <link rel="stylesheet" href="../..//css/style.css">
+    <!-- Khai báo css bằng cách External(Bên ngoài) tức là dẫn từ 1 tệp bên ngoài quản lí riêng -->
+    <style>
+        /* Khai báo css bằng cách  */
+    </style>
+</head>
+<body>
+    <!-- Bài 1 : Tiêu đề Heading h1-h6  
+                -- Một File chỉ có 1 thẻ h1 duy nhất-->
+    <h1>Content</h1>
+    <h2>Content</h2>
+    <h3>Content</h3>
+    <h4>Content</h4>
+    <h5>Content</h5>
+    <h6>Content</h6>
+
+    
+    <!-- Bài 2 : Paragraph văn bản 
+        B Bold in đậm (strong thay thế hiện nội dung quan trọng)
+        I Italic - in nghiêng (em) 
+        U underline gạch chân 
+        Span nhóm các phẩn tử nội tuyến cho việc định dạng css
+        Pre preformatted giữ nguyên định dạng giống lúc soạn thảo.
+        Br break ngắt dòng
+        Hr horizontal tạo dòng kẻ ngang
+     -->
+    
+     <p>Paragraph Lorem</p>
+     <p>Tài liệu học <b>Lập Trình Web</b> từ cơ bản đến nâng cao</p>
+     <p>Tài liệu học <strong>Lập Trình Web</strong> từ cơ bản đến nâng cao</p>
+     <!-- Thẻ strong với b giống nhau đều in đậm -->
+     <p>Tài liệu học <i>lập trình web</i> từ cơ bản đến nâng cao</p>
+     <p>Tài liệu học <em>lập trình web</em> từ cơ bản đến nâng cao</p>
+    <!-- Thẻ i với thẻ em giống nhau đều in nghiên -->
+    <p>Tài liệu học <u>Lập Trình Web</u> từ cơ bản đến nâng cao</p>
+    <!-- Thẻ u gạch chân  -->
+    <p>Tài liệu hướng dẫn học <span style="font-size:30px;font-family:monospace;">lập trình web</span> từ cơ bản đến nâng cao.</p>
+    <!-- Thẻ <span> được dùng để nhóm các phần tử nội tuyến lại với nhau, tiện cho việc định dạng CSS. -->
+     <pre>Huy Đẹp Trai</pre>
+     <!-- giữ nguyên khoảng trắng  -->
+     <hr>    
+    <p>Trong hương ngàn hoa cỏ <br>
+        Ta tìm bóng hình em <br>
+        Tìm hoài mà không thấy <br>
+        Khiến hồn ta dại điên. </p>
+   <hr>
+   <!-- Bài 3 a anchor liên kết -->
+   <a href="google.com" target="_blank" rel="noopener noreferrer">Dùng để mở tab mới</a>
+   <!-- target="_blank" dùng dể sang tab mới
+        rel="noopener noreferrer"> không bị loading ngăn chặn bảo mật -->
+        <a href="mailto:">Chuyển đến mail</a>
+        <a href="tel:+"> chuyến đến ứng dụng có thể gọi</a>
+    <a href="">có thể dùng liên kết các web site với nhau </a>
+<br>
+    <!-- Bài 4 Img Image  -->
+<!-- 1    src	
+đường dẫn đến tập tin hình ảnh mà bạn muốn chèn vào  -->
+
+<!-- 2alt	
+hiển thị thay thế khi đường dẫn đến tập tin hình ảnh không chính xác -->
+
+<!-- 3border	
+Làm độ dày của đường viền bao xung quanh tấm hình tăng lên -->
+<!-- border="10" tăng lên 10 px -->
+<img src="./391416821_339197555348844_9114348888062810042_n.jpg" border="10">
+<!-- 4 width	
+Thiết lập chiều rộng cho tấm hình -->
+<p>- Tấm hình bên dưới sẽ có chiều rộng bằng 300 pixel</p>
+<img src="./391416821_339197555348844_9114348888062810042_n.jpg" width="300px">
+<p>- Tấm hình bên dưới sẽ có chiều rộng bằng 100% chiều rộng phần nội dung của phần tử cha của nó (tức là phần tử body)</p>
+<img src="./391416821_339197555348844_9114348888062810042_n.jpg" width="100%">
+</body>
+ <!--5 height	
+Thiết lập chiều cao cho tấm hình -->
+<p>- Tấm hình bên dưới sẽ có chiều cao bằng 100 pixel</p>
+<img src="./391416821_339197555348844_9114348888062810042_n.jpg" width="100px">
+<p>- Tấm hình bên dưới sẽ có chiều cao bằng 50% chiều cao phần nội dung của phần tử cha của nó.</p>
+<div style="border:1px solid black;height:300px">
+    <img src="./391416821_339197555348844_9114348888062810042_n.jpg" height="50%">
+    <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+<!-- 6 vspace	
+khoảng cách lề phía trên và lề phía dưới  -->
+<p>tấm ảnh được cách trên dưới 50 px</p>
+<div style="display:inline-block;border:1px solid #555">
+    <img src="./391416821_339197555348844_9114348888062810042_n.jpg"" vspace="50">
+</div>
+<br> <br>
+<!-- 7 hspace	
+ khoảng cách lề bên trái và lề bên phải  -->
+ <p>tấm ảnh được cách trái phải 100px</p>
+ <div style="display:inline-block;border:1px solid #555">
+    <img src="./391416821_339197555348844_9114348888062810042_n.jpg" hspace="100">
+</div>
+<!-- 8 align	
+Xác định vị trí của tấm hình so với các văn bản xung quanh -->
+    <p>Tấm hình được đẩy sang bên trái
+        4 hướng tự thế dô mà coi
+    </p>
+    <img src="./391416821_339197555348844_9114348888062810042_n.jpg" align="left">
+   <p>- Em là cô gái xinh đẹp nhưng không thuộc về tôi</p>
+</body>
+</html> 
