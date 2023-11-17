@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100vh;
+    /* layuot dàng hàng ngang  */
+    display: flex;
+
+}
+body>div{
+    /* canh giữa */
+    margin: auto;
+}
+.toast{
+    display: flex; 
+    align-items : center;
+    padding: 20px 0px ;
+    border-left: 4px solid ;
+    border-radius: 2px ;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+}
+.toast__icon{
+    font-size: 26px;
+    color: green;
+}
+.toast__icon,   
+.toast__close{
+    padding: 0 16px;
+}
+.toast__close{
+    font-size: 30px;
+    color: rgba(134, 30, 13, 0.5);
+}

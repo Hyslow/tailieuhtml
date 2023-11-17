@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+ box-sizing: border-box;
+
+}
+body{
+height: 100vh;
+/* phần tử nằm ngang  */
+display: flex;
+flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div{
+ /* sẽ chọn tất cả các div con trực tiếp của phần tử body */
+ margin: auto;
+ /* căn giữa */
+}
+.btn{
+    /* chuyển thẻ button block thành inline block  */
+    display: inline-block ; 
+    /* bỏ dấu gạch chân thẻ a  */
+    text-decoration: none;
+    /* bỏ đi border của button và background của nó uotline  */
+    /* transparent trong suốt  */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* chữ màu trắng  */
+    color: #fff;
+    padding: 14px 48px;
+    border-radius: 50px;
+    /* tạo ra bàn tay  */
+    cursor: pointer;
+    /* làm cho cái nút dài ra  */
+    min-width: 120px;
+    /* cho phép hiệu ứng chuyển tiếp thay đổi tốc độ trong suốt thời gian của nó. */
+    transition: opacity 0.5 ease;
+}
+.btn:hover{
+    /* khi dí chuột vào nó sẽ giảm 0.2 độ trong suốt  */
+    opacity: 0.8;
+}
+
+.btn +.btn{
+margin-left: 16px;
+}
+
+
+.btn--success{
+    background-color: green ;
+}
+
+.btn--warn{
+    background-color:orange ;
+}
+
+.btn--enrror{
+    background-color:red ;
+}
+.btn--disabled{
+    opacity: 0.5 !important;
+    cursor: default;
+}
+
+.btn--size-s{
+    padding: 12px 36px;
+}
+.btn--size-l{
+    padding: 16px 52px;
+}
